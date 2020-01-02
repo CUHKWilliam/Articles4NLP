@@ -10,4 +10,7 @@
    - 方法：有点类似deep dream的方法，训练额外像素块θ每个像素点的颜色
    - 结果：在MNIST，CIFAR-10，counting三个数据集上获得perturb后99%，95%，65%的测试准确率。说明通过拼接额外训练后的像素块，可以将原有输入集和输出集的映射关系转换为拼接后输入集和perturb输出集的对应关系。
    - future work：可以尝试在语言模型上进行reprogramming测试；
-   
+- Metric Learning for Adversarial Robustness
+   - 概要：给定输入x，输出y，x的对抗样本a，训练模型使x和同类样本距离尽量减小，a和x所在样本团体距离尽量增大，以此提高模型鲁棒性。
+   - 方法：定义regularizer，来实现同类样本的聚集以及不同类样本的远离。
+   - 结果：比以往的方法在鲁棒性上有提升。
