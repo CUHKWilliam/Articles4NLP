@@ -7,10 +7,10 @@
    通过几个不同类型预处理图片的方式的随机组合来处理图片再输入进NN，使攻击者无法获得有效梯度信息而无法攻击
 - Feature Denoising for Improving Adversarial Robustness(cvpr 2019)  
    在NN的中间层提取feature map，并通过训练的神经网络对feature map 降噪
-- Adversarial Defense by Stratiﬁed Convolutional Sparse Coding  
+- Adversarial Defense by Stratiﬁed Convolutional Sparse Coding  (cvpr2019)
    没太看得懂，先放在这里先
-- Improving Adversarial Robustness via Promoting Ensemble Diversity  
+- Improving Adversarial Robustness via Promoting Ensemble Diversity  (ICML2019)
    多个模型共同学习，并且通过最大化模型输出之间差异的方式提高不同模型的diversity，来使得一个模型被误导的时候其它模型能不被误导，以此来提高整体的鲁棒性。
-- Metric Learning for Adversarial Robustness  
+- Metric Learning for Adversarial Robustness  (nips19)
    给定输入x，输出y，x的对抗样本a，训练模型使x和同类样本距离尽量减小，a和x所在样本团体距离尽量增大，以此提高模型鲁棒性。
 
