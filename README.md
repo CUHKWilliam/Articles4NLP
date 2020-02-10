@@ -1,5 +1,4 @@
 # 对抗学习论文2019
-## 防守
 - Certiﬁed Robustness to Adversarial Word Substitutions (nips19)
    对于每个训练的样本，运用Interval Bound Propagation找到样本附近空间在模型输出空间的对应空间，然后在训练中尽量保证这个对应的输出空间和样本对应的标签一致。不足：IBP方法只能估计输入对应的输出空间，误差随着模型层数的增加而增大，因此RNN等模型使用IBP方法会强迫离输入较远的空间对应输出也具有相同的标签，造成错误；即使在模型层数较少的模型中，运用IBP会降低普通测试数据的准确率，欠拟合问题严重。
 - ComDefend: An Efﬁcient Image Compression Model to Defend Adversarial(cvpr 2019)
